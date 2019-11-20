@@ -9,13 +9,13 @@ const UserInfo = ({ userInfo }) => (
         <img className="prof-img img-fluid rounded-circle shadow" src={userInfo.avatar} alt="User Avatar"/>
       </div>
       <div className="col-md-8">
-        <h2 className="text-center text-md-left mb-5"><i className="fas fa-user mr-2"></i><a href={userInfo.url} target="_blank">{userInfo.name}</a></h2>
-        <p className="user-info__bio"><i className="fas fa-pencil-alt mr-2"></i> {userInfo.bio}</p>
+        <h3 className="text-center text-md-left mb-5"><a href={userInfo.url} target="_blank">{userInfo.name}</a></h3>
+        <p className="user-info__bio"> {userInfo.bio}</p>
         <hr/>
         <ul className="user-info__list">
-          <li><i className="far fa-file mr-2"></i> Repositórios: {userInfo.repos}</li>
-          <li><i className="fas fa-users mr-2"></i> Seguidores: {userInfo.followers}</li>
-          <li><i className="fas fa-user-plus mr-2"></i> Seguindo: {userInfo.following}</li>
+          <li> Repositories: {userInfo.repos}</li>
+          <li> Followers: {userInfo.followers}</li>
+          <li> Following: {userInfo.following}</li>
         </ul>
       </div>
     </div>

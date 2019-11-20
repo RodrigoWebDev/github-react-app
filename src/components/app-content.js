@@ -21,9 +21,7 @@ const AppContent = ({
     {
       //Se estiver carregando mostra uma animação de loader
       isFetching &&
-      <div className="loader text-center">
-        <i className="fas fa-spinner fa-spin"></i>
-      </div>
+      <div className="lds-dual-ring"></div>
     }
     { !!userInfo && <UserInfo userInfo={userInfo} />}
 

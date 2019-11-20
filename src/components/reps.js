@@ -4,7 +4,7 @@ import React from 'react'
 
 const Reps = ( { className, title, repos } ) => (
   <div className={className}>
-    <h2>{title}</h2>
+    <h3>{title}</h3>
     <ul>
       {repos.map((rep, index) => (
         <li key={index}>
